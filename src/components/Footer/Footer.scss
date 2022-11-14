@@ -1,0 +1,45 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 10vw;
+  position: relative;
+
+  p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    span {
+      padding: 10px;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+  }
+
+  span {
+    color: #ffffff50;
+    font-size: 0.7rem;
+  }
+  span.left__side,
+  span.right__side {
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  span.left__side {
+    left: 0;
+  }
+  span.right__side {
+    right: 0;
+  }
+
+  div.social__links {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      text-transform: capitalize;
+      font-size: larger;
+    }
+  }
+}

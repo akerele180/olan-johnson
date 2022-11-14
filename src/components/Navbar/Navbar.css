@@ -1,0 +1,84 @@
+header {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10vw;
+  padding: 20px 0;
+  height: 100px;
+}
+header .logo img {
+  width: 80%;
+  text-align: center;
+}
+header nav ul:nth-child(2) {
+  display: none;
+}
+header ul,
+header nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header ul li,
+header nav li {
+  padding: 24px;
+  transition: all ease-out 1s;
+}
+header ul a,
+header nav a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  font-size: 1.5rem;
+}
+header ul a:hover::after,
+header nav a:hover::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -10px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  opacity: 1;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+header ul a::after,
+header nav a::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -10px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transform: translateY(-15px);
+  width: 0px;
+  height: 3px;
+  background: #000;
+  opacity: 0;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+header .active::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -10px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: #000;
+  opacity: 1;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+@media (max-width: 951px) {
+  nav ul:nth-child(2) {
+    display: block;
+  }
+  nav ul:nth-child(2) header {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

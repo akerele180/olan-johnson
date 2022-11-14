@@ -1,0 +1,37 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 10vw;
+  position: relative;
+}
+footer span {
+  color: rgba(255, 255, 255, 0.3137254902);
+  font-size: 0.7rem;
+}
+footer span.left__side, footer span.right__side {
+  position: absolute;
+}
+footer span.left__side {
+  left: 0;
+}
+footer span.right__side {
+  right: 0;
+}
+footer p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+footer p span {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+footer div.social__links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: larger;
+}/*# sourceMappingURL=Footer.css.map */
