@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="bg-black text-white relative">
-      <div className="grid grid-cols-3 items-center justify-between w-[70vw] mx-auto py-20">
+      <div className="md:grid grid-cols-3 items-center justify-between md:w-[70vw] mx-auto md:py-20 py-10 max-md:px-8">
         <ul className="list-none">
           <p className="text-4xl leading-10 my-5">Lagos</p>
           <li className="leading-10">Maryland 123</li>
@@ -27,26 +27,27 @@ const Footer = () => {
           <li className="leading-10">info@olanjohnson.com</li>
         </ul>
       </div>
-      <span className="absolute top-3/4 left-0 left__side text-[10px] text-gray-400 rotate-90">
-        {" "}
-        &copy; {new Date().getUTCFullYear()} OLAN AND JOHNSON
-      </span>
-      <span className="absolute top-3/4 right-0 right__side text-[10px] text-gray-200 -rotate-90">
-        Designed and Developed by Tosin Akerele
-      </span>
+
       <div className="social__links uppercase">
-        <ul className="flex items-center justify-center pb-5">
-          <li className="px-5">facebok</li>
-          <li className="px-5">twitter</li>
-          <li className="px-5">youtube</li>
-          <li className="px-5">instagram</li>
-          <li className="px-5">whatsapp</li>
+        <ul className="md:flex items-center justify-center pb-5">
+          <li className="md:px-5  max-md:px-8  max-md:leading-10">facebok</li>
+          <li className="md:px-5  max-md:px-8  max-md:leading-10">twitter</li>
+          <li className="md:px-5  max-md:px-8  max-md:leading-10">youtube</li>
+          <li className="md:px-5  max-md:px-8  max-md:leading-10">instagram</li>
+          <li className="md:px-5  max-md:px-8  max-md:leading-10">whatsapp</li>
         </ul>
       </div>
       <p className="text-center py-5">
         <span className="px-3">Privacy Notice</span>
         <span className="px-3">Cookie Policy</span>
       </p>
+      <span className="md:absolute md:top-3/4 md:left-0 left__side text-[10px] text-gray-400 md:rotate-90   max-md:block max-md:text-center">
+        {" "}
+        &copy; {new Date().getUTCFullYear()} OLAN AND JOHNSON
+      </span>
+      <span className="md:absolute md:top-3/4 md:right-0 right__side text-[10px] text-gray-200 md:-rotate-90  max-md:block  max-md:text-center">
+        Designed and Developed by Tosin Akerele
+      </span>
     </footer>
   );
 };

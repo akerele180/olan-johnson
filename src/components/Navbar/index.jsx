@@ -26,12 +26,12 @@ const Navbar = () => {
 
         <ul className="mob__nav">
           <GrMenu
-            size={40}
+            size={35}
             className={`${!viewNav ? "active" : "inactive"}`}
             onClick={() => setViewNav(!viewNav)}
           />
           <GrClose
-            size={40}
+            size={35}
             className={`${viewNav ? "active" : "inactive"}`}
             onClick={() => setViewNav(!viewNav)}
           />
