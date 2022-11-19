@@ -1,37 +1,57 @@
-footer {
+/* footer {
   background-color: #000;
   color: #fff;
   padding: 50px 10vw;
   position: relative;
 }
-footer span {
-  color: rgba(255, 255, 255, 0.3137254902);
-  font-size: 0.7rem;
-}
-footer span.left__side, footer span.right__side {
-  position: absolute;
-}
-footer span.left__side {
-  left: 0;
-}
-footer span.right__side {
-  right: 0;
-}
+
 footer p {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 footer p span {
   padding: 10px;
   color: #ffffff;
   font-size: 1rem;
 }
+
+footer span {
+  color: #ffffff50;
+  font-size: 0.7rem;
+}
+
+footer span.left__side,
+footer span.right__side {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+footer span.left__side {
+  left: 0;
+}
+
+footer span.right__side {
+  right: 0;
+}
+
 footer div.social__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   text-transform: capitalize;
   font-size: larger;
-}/*# sourceMappingURL=Footer.css.map */
+}  */
