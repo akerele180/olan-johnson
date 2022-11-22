@@ -6,6 +6,7 @@ import HenessyGold from "../../assets/newhennessybrandvisualidentity_/hennesy-go
 import GreenAfrica from "../../assets/green-africa.png";
 import Moet from "../../assets/CYMK(Print) - TWO COLOUR (1) Moet/moet.png";
 import Glen from "../../assets/6-assets new glenmorangie/Glen.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -16,15 +17,19 @@ const Home = () => {
         </video>
       </section>
       <section id="double__carousel"></section>
-      <section
+
+      <motion.section
         id="principles"
         className="py-10 bg-black text-white  max-md:px-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 1.5, ease: [0, 0.71, 0.2, 1.01] }}
       >
         <h2 className="text-2xl md:text-5xl text-center mx-auto md:w-3/4 md:py-20 md:leading-[4rem]">
           We have 3 key principles on how to get the most effective results for
           you
         </h2>
-        <div className="md:grid grid-cols-3 md:gap-10 md:w-5/6 mx-auto pb-40">
+        <div className="md:grid grid-cols-3 md:gap-10 md:w-5/6 mx-auto pb-20">
           <div>
             <h3 className="uppercase text-2xl md:mb-5 mb-1 max-md:pt-8">
               01. think
@@ -53,7 +58,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <section id="others" className="bg-otherBackground py-10  max-md:px-8">
         <h2 className="text-2xl md:text-5xl text-center mx-auto md:w-3/4 py-10 md:py-20 md:leading-[4rem]">
@@ -61,15 +66,15 @@ const Home = () => {
           core diciplines
         </h2>
 
-        <div className="pb-10 md:pb-40 grid lg:grid-cols-5 gap-4 items-center justify-between md:w-[90vw] mx-auto">
+        <div className="pb-10 md:pb-40 lg:grid lg:grid-cols-5 lg:gap-4 items-center justify-between md:w-[90vw] mx-auto">
           <div className="text-center">
-            <h3 className="uppercase mb-3 text-2xl max-md:pt-4">
+            <h3 className="uppercase lg:mb-3 text-2xl max-md:pt-4">
               interor & architecture
             </h3>
             <p>Creating awe-inspiring, branded environments</p>
           </div>
           <div className="text-center">
-            <h3 className="uppercase mb-3 text-2xl max-md:pt-8">
+            <h3 className="uppercase lg:mb-3 text-2xl max-lg:pt-8">
               customer experience
             </h3>
             <p>
@@ -77,7 +82,7 @@ const Home = () => {
             </p>
           </div>
           <div className="text-center">
-            <h3 className="uppercase mb-3 text-2xl max-md:pt-8">
+            <h3 className="uppercase lg:mb-3 text-2xl max-lg:pt-8">
               creative strategy
             </h3>
             <p>
@@ -86,7 +91,7 @@ const Home = () => {
             </p>
           </div>
           <div className="text-center">
-            <h3 className="uppercase mb-3 text-2xl max-md:pt-8">
+            <h3 className="uppercase lg:mb-3 text-2xl max-lg:pt-8">
               graphic design
             </h3>
             <p>
@@ -95,7 +100,7 @@ const Home = () => {
             </p>
           </div>
           <div className="text-center">
-            <h3 className="uppercase mb-3 text-2xl max-md:pt-8">
+            <h3 className="uppercase lg:mb-3 text-2xl max-lg:pt-8">
               project governance
             </h3>
             <p>Ensuring smooth coordination & collaboration</p>
@@ -107,6 +112,7 @@ const Home = () => {
         <h2 className="text-2xl md:text-5xl text-center mx-auto md:w-3/4 py-10 md:py-20 md:leading-[4rem]">
           We reimagine consumer experiece for the world's leading brands
         </h2>
+
         <div className="md:grid md:grid-cols-4 md:items-center md:gap-20 md:w-[80vw] mx-auto pb-20">
           <div>
             <img src={GreenAfrica} alt="" />

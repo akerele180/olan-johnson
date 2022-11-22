@@ -1,26 +1,8 @@
-header {
-  color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 10vw;
-  padding: 20px 0;
-  height: 100px;
-}
+
 
 header .logo img {
   width: 100%;
   text-align: center;
-}
-
-header nav ul:nth-child(2) {
-  display: none;
 }
 
 header ul,
@@ -36,7 +18,7 @@ header nav {
 
 header ul li,
 header nav li {
-  padding: 24px;
+  /* padding: 24px; */
   -webkit-transition: all ease-out 1s;
   transition: all ease-out 1s;
 }
@@ -100,20 +82,20 @@ header .active::after {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 
-/* Mobile - Tab view */
-
-@media screen and (max-width: 900px) {
-  header nav ul:nth-child(2) {
-    cursor: pointer;
-    display: block;
-  }
-  header nav ul:nth-child(1) {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
-  .inactive {
-    display: none;
-  }
+/* coming from wave */
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 200px 0 0 0 #19cfbd;
+  transition: all ease 500ms;
+  color: white !important;
 }
+.slide {
+  transition: box-shadow ease-out 300ms;
+}
+
+.slide__mob {
+  background-color: #fff !important;
+  color: #19cfbd !important;
+}
+
+ 
